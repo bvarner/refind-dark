@@ -53,9 +53,14 @@ Before you begin, ensure you have met the following requirements:
 ## Installation
 
 ```bash
-git clone https://github.com/2kabhishek/refind-dark.git
+sudo su -
+cd /boot/efi/EFI/refind
+mkdir -p themes
+cd themes
+
+git clone https://github.com/bvarner/refind-dark.git
 cd refind-dark
-./setup.sh
+cp refind.conf ../..
 ```
 
 ## Customizations
